@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7aabd09bc4e647b4ba918f17faf9c32d
+guid: 7d5bf1e850dbcf24196ecf6282eeeb73
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -140,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: of-on_0
+      name: thumblers_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 141.5
-        width: 146
-        height: 141.5
+        y: 640
+        width: 473
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87fee29c0cb61bb43b940590cb864f17
-      internalID: 1844452851
+      spriteID: b9b00471aecae9b44bdda584dc9070e7
+      internalID: -1536755700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: of-on_1
+      name: thumblers_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0.5
-        width: 146
-        height: 141.5
+        x: 473
+        y: 640
+        width: 473
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e787f38d5d82cdc44ae3263eed73f104
-      internalID: -791228727
+      spriteID: 51d674a853b857744b0a346979832dec
+      internalID: 1275931639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumblers_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 473
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34554467adf7c5499bb4daf40ad22bb
+      internalID: 1349514621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumblers_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 320
+        width: 473
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fd65f3c2f510c4cb369722ed586f88
+      internalID: -128271867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumblers_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 473
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a134b052966234994310bbe4126c84
+      internalID: -1389636738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumblers_5
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 0
+        width: 473
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a883885897714d247a133e9663e30ad7
+      internalID: -1639206642
       vertices: []
       indices: 
       edges: []
@@ -192,8 +276,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      of-on_0: 1844452851
-      of-on_1: -791228727
+      thumblers_1: 1275931639
+      thumblers_5: -1639206642
+      thumblers_4: -1389636738
+      thumblers_3: -128271867
+      thumblers_0: -1536755700
+      thumblers_2: 1349514621
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
