@@ -86,9 +86,15 @@ public class OpenBook : MonoBehaviour
         startTime = DateTime.Now;
         rotationVector = new Vector3(0, -180, 0);
         PlaySoundClose();
+        Invoke("Hide", 1.5f);
         //PlaySound();
     }
-    
+
+    public void Hide()
+    {
+        this.transform.parent.gameObject.SetActive(false);
+    }
+
     private void PlaySound()
     {
         if ((_audioSource != null) && (openBook != null))
