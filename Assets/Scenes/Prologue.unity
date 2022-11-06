@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 352559965}
   - component: {fileID: 352559968}
   - component: {fileID: 352559967}
+  - component: {fileID: 352559969}
   m_Layer: 5
   m_Name: txt_replic
   m_TagString: Untagged
@@ -434,6 +435,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352559964}
   m_CullTransparentMesh: 1
+--- !u!114 &352559969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352559964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1366e98c046a506488d80b8ee7737f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replics:
+  - "\u041D\u043E \u0432\u043E\u0442 \u043D\u044E\u0430\u043D\u0441 - \u043F\u043E\u0445\u043E\u0436\u0435,
+    \u0442\u044B \u0432\u0441\u0435 \u0437\u0430\u0431\u044B\u043B."
+  - "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F \u043F\u043E\u0434
+    \u0441\u0438\u0434\u0435\u043D\u044C\u0435\u043C."
+  - "\u041F\u043E\u0434\u043D\u044F\u0442\u044C \u043F\u0430\u0440\u0443\u0441\u0430!"
+  text: {fileID: 352559967}
+  first: 0
+  pingeon: {fileID: 0}
+  cloud: {fileID: 605551404}
+  Scene: Prologue2
+  cloud_parret: {fileID: 0}
+  firstText: "\u0428\u043A\u0438\u043F\u0435\u0440, \u0442\u044B \u0436\u0438\u0432! "
 --- !u!1 &380335775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,8 +1646,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replics: []
   text: {fileID: 1474788580}
+  first: 0
   pingeon: {fileID: 0}
   cloud: {fileID: 0}
+  Scene: 
   cloud_parret: {fileID: 0}
   firstText: 
 --- !u!114 &1474788580
@@ -1976,8 +2004,10 @@ MonoBehaviour:
   replics:
   - "\u041E\u0445, \u0433\u0434\u0435 \u044F, \u0447\u0442\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442\u2026 "
   text: {fileID: 589378231}
+  first: 1
   pingeon: {fileID: 472882927}
   cloud: {fileID: 54275443}
+  Scene: 
   cloud_parret: {fileID: 605551404}
   firstText: Ah, chit, here we go again
 --- !u!1 &1905641600

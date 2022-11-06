@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class Dialogue : MonoBehaviour
 {
     [Header ("Set in Inspector")]
@@ -10,10 +12,10 @@ public class Dialogue : MonoBehaviour
    // public string replic1;
     public List<string> replics = new List<string>();
     public Text text;
-
+    public bool first;
     public GameObject pingeon;
     public GameObject cloud;
-
+    public string Scene;
     public GameObject cloud_parret;
     public string firstText;
     private int count = 0;
@@ -33,13 +35,17 @@ public class Dialogue : MonoBehaviour
         text.text = replics[count];
         count++;
         }else if(count == replics.Count){
-        pingeon.SetActive(true);
+       
         cloud.SetActive(false);
-        Invoke("Cloud", 2f);
-        
+        if(first){
+         pingeon.SetActive(true);
+         Invoke("Cloud", 2f);
+         print("end");
+        }
+           Invoke("LoadScene", 2f);     
         }
         }
-        if(count == 0){
+        if(count == 0 && !cloud.active ){
           cloud.SetActive(true);
             }
     }
@@ -47,6 +53,10 @@ public class Dialogue : MonoBehaviour
 
     private void Cloud(){
 cloud_parret.SetActive(true);
+    }
+
+    public void LoadScene(){
+    SceneManager.LoadScene(Scene);
     }
 
     
