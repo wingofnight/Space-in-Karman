@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class BackgroindMusic : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
-    // Update is called once per frame
-    void Update()
+ 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        
+        /*if (scene.name == "3")
+            audio.mute = true;
+        else
+            audio.mute = false;*/
+    }
+ 
+    void Destroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
