@@ -9,6 +9,7 @@ public class OpenBook : MonoBehaviour
     [SerializeField] private Button closeBtm=null;
     [SerializeField] AudioSource _audioSource=null;
     [SerializeField] private AudioClip openBook =null;
+    [SerializeField] private AudioClip closeBookAudioClip =null;
     [SerializeField] private GameObject openedBook = null;
     [SerializeField] private GameObject insaidBackCover = null;
     private Vector3 rotationVector;
@@ -84,8 +85,8 @@ public class OpenBook : MonoBehaviour
         isCloseCliked = true;
         startTime = DateTime.Now;
         rotationVector = new Vector3(0, -180, 0);
-        
-        PlaySound();
+        PlaySoundClose();
+        //PlaySound();
     }
     
     private void PlaySound()
@@ -93,6 +94,15 @@ public class OpenBook : MonoBehaviour
         if ((_audioSource != null) && (openBook != null))
         {
             _audioSource.PlayOneShot(openBook);
+           
+        }
+    }
+
+    private void PlaySoundClose()
+    {
+        if ((_audioSource != null) && (closeBookAudioClip != null))
+        {
+            _audioSource.PlayOneShot(closeBookAudioClip);
            
         }
     }
