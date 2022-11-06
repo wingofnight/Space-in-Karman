@@ -41,6 +41,10 @@ public class FlipPage : MonoBehaviour
     private DateTime startTime;
     private DateTime endTime;
     
+    [SerializeField] AudioSource _audioSource=null;
+    [SerializeField] private AudioClip nextAudioClip =null;
+    [SerializeField] private AudioClip prevAudioClip =null;
+    
  
     void Start()
     {
@@ -50,10 +54,12 @@ public class FlipPage : MonoBehaviour
         if (nextBtm != null)
         {
             nextBtm.onClick.AddListener(() => turnOnePagetBtm_Click(ButtonType.NextButton));
+            
         }
         if (prevBtm != null)
         {
             prevBtm.onClick.AddListener(() => turnOnePagetBtm_Click(ButtonType.PrevButton));
+            
         }
         if (closeBtm != null)
         {
@@ -203,7 +209,7 @@ public class FlipPage : MonoBehaviour
         if (type == ButtonType.NextButton)
         {
             rotationVector = new Vector3(0,180,0);
-
+            _audioSource.PlayOneShot(nextAudioClip);
             SetFlipPageText(Page.CurrentPage2, Page.CurrentPage2 + 1);
 
             Page.CurrentPage1 += 2;
@@ -223,7 +229,7 @@ public class FlipPage : MonoBehaviour
             Vector3 newRotation = new Vector3(startRotation.x, 180, startRotation.z);
             transform.rotation = Quaternion.Euler(newRotation);
             rotationVector = new Vector3(0,-180,0);
-            
+            _audioSource.PlayOneShot(prevAudioClip);
             SetFlipPageText(Page.CurrentPage1 - 1, Page.CurrentPage1);
             
             Page.CurrentPage1 -= 2;

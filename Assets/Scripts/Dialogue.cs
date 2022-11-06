@@ -56,7 +56,7 @@ cloud_parret.SetActive(true);
     }
 
     public void LoadScene(){
-    SceneManager.LoadScene(Scene);
+   // SceneManager.LoadScene(Scene);
     }
 
     

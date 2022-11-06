@@ -130,7 +130,8 @@ MonoBehaviour:
   openBtm: {fileID: 7224496651007734284}
   closeBtm: {fileID: 7224496651679077758}
   _audioSource: {fileID: 7224496650826053121}
-  openBook: {fileID: 8300000, guid: 51ab215886650314d9e63f54918f9026, type: 3}
+  openBook: {fileID: 8300000, guid: 8b78d8cc3c65c4f4cb307da37cc9095d, type: 3}
+  closeBookAudioClip: {fileID: 8300000, guid: dfd8410479f11ce4d876027449612427, type: 3}
   openedBook: {fileID: 7224496651559495819}
   insaidBackCover: {fileID: 7224496650066638764}
 --- !u!1 &7224496650066638764
@@ -1057,6 +1058,9 @@ MonoBehaviour:
   footerText1_2: {fileID: 7224496651194220686}
   footerText2_1: {fileID: 7224496651374518332}
   footerText2_2: {fileID: 7224496650863916922}
+  _audioSource: {fileID: 7224496650826053121}
+  nextAudioClip: {fileID: 8300000, guid: af479f9e90a39944fbb1a532013dac25, type: 3}
+  prevAudioClip: {fileID: 8300000, guid: fabcae616a32fe344969df90b6b73b85, type: 3}
 --- !u!1 &7224496650826053120
 GameObject:
   m_ObjectHideFlags: 0
